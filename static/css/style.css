@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Unbounded:wght@200..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  height: 2000px;
+}
+
+body {
+  margin-top: 8px;
+  transition: background-color 0.5s, color 0.5s;
+}
+body.dark {
+  background-color: black;
+}
+
+.headbar {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.headbar-href {
+  z-index: 1;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.headbar-href.dark {
+  z-index: 1;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  transition: 0.4s;
+  border-radius: 25px;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider {
+  background-color: white;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(25px);
+  background-color: black;
+}
+
+.background-text {
+  display: flex;
+  justify-content: center;
+}
+
+.stretch {
+  font-size: 1700%;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+
+  background: url("../image/port1.webp") no-repeat;
+  background-size: cover;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: 0.5s;
+}
+
+.stretch.dark {
+  font-size: 1700%;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  font-weight: bold;
+  text-align: center;
+
+  background: url("../image/port.jpg") no-repeat center center;
+  background-size: cover;
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.my-img {
+  margin-top: 5%;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.about-me-txt {
+  width: 15%;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  display: inline-block;
+  font-weight: 400;
+  margin-right: 0%;
+  transition: 0.5s;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.btn-about-me {
+  height: 40px;
+  width: 10%;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-image: linear-gradient(
+    153deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(85, 230, 215, 1) 38%,
+    rgba(255, 74, 74, 1) 100%
+  );
+  cursor: pointer;
+  transition: 1s;
+}
+
+.btn-about-me:hover {
+  transform: rotate(25deg);
+}
+
+.about-me-txt.dark {
+  color: white;
+}
+
+.contact-btn.dark {
+  color: white;
+}
+
+.btn-about-me.dark {
+  border: 1px solid white;
+  background-image: linear-gradient(
+    153deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(74, 1, 133, 1) 37%,
+    rgba(207, 107, 0, 1) 94%
+  );
+}
