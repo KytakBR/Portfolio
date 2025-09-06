@@ -1,38 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Главная страница</title>
+    <title>Портфолио KytakBR</title>
     <link rel="stylesheet" href="static/css/reset.css" />
     <link rel="stylesheet" href="static/css/style.css" />
   </head>
   <body>
-    <div class="headbar">
-      <a href="#about" class="headbar-href">Обо мне</a>
-      <a href="#" class="headbar-href">Проекты</a>
-      <a href="#" class="headbar-href">Прогресс обучения</a>
-      <a href="#contacts" class="headbar-href">Контакты</a>
-      <label class="switch">
-        <input type="checkbox" id="themeToggle" />
-        <span class="slider"></span>
-      </label>
-    </div>
-    <div class="background-text" id="about">
-      <h1 class="stretch">обо мне</h1>
-      <img class="my-img" src="static/image/i3.png" />
-    </div>
-    <div class="about-me">
-      <span class="about-me-txt">
-        Я студент 2 курса ТюмГУ - Тюменского государственного университета.
-        Учусь на программиста, планирую выбрать frontend ответвление и писать
-        различные сайты. Это мой сайт - портфолио, который должен показать все
-        мои навыки и проекты.
-      </span>
-      <button class="btn-about-me">
-        <a href="#contacts" class="contact-btn">Связаться</a>
-      </button>
-    </div>
+    <header>
+      <nav class="headbar">
+        <a href="#about" class="headbar-href">Обо мне</a>
+        <a href="#stack" class="headbar-href">Стек</a>
+        <a href="#projects" class="headbar-href">Проекты</a>
+        <a href="#contacts" class="headbar-href">Контакты</a>
+        <div class="container">
+          <label for="switch" class="toggle">
+            <input type="checkbox" class="input" id="switch" />
+            <div class="icon icon--moon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="#fff"
+                width="28"
+                height="28"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+
+            <div class="icon icon--sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                width="28"
+                height="28"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                ></path>
+              </svg>
+            </div>
+          </label>
+        </div>
+      </nav>
+      <section class="about" id="about">
+        <div class="container-about">
+          <div class="background-text">
+            <h1 class="stretch">обо мне</h1>
+            <img class="my-img" src="static/image/i3.png" />
+          </div>
+          <div class="about-me">
+            <span class="about-me-txt">
+              Я студент 2 курса ТюмГУ — Тюменского государственного
+              университета. Учусь на программиста, планирую выбрать frontend
+              ответвление и стать Fullstack разработчиком. Это мой сайт -
+              портфолио, который покажет все мои навыки и проекты.
+            </span>
+            <a href="#contacts" class="contact-btn">Связаться</a>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="stack" id="stack">
+        <div class="my-stack">
+          <span>Стек технологий</span>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-element">
+            <div class="stack-card">
+              <div class="stack-front">
+                <div class="stack-div">
+                  <span class="stack-name">Front</span>
+                  <div class="line"></div>
+                </div>
+                <a class="stack-more">Подробнее</a>
+              </div>
+              <div class="stack-back">
+                <div class="stack-content">
+                  <div class="front-grid">
+                    <div class="front-ico">1</div>
+                    <div class="front-ico">2</div>
+                    <div class="front-ico">3</div>
+                    <div class="front-ico">4</div>
+                    <a class="stack-return">Назад</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack-element2">
+            <div class="stack-card">
+              <div class="stack-front">
+                <div class="stack-div">
+                  <span class="stack-name">Back</span>
+                  <div class="line"></div>
+                </div>
+                <a class="stack-more">Подробнее</a>
+              </div>
+              <div class="stack-back">
+                <div class="stack-content">
+                  <span>Backend Technologies</span>
+                  <ul>
+                    <li>Python/Django</li>
+                    <li>Node.js/Express</li>
+                    <li>Java/Spring</li>
+                    <li>PostgreSQL</li>
+                  </ul>
+                  <a class="stack-return">Назад</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stack-element3">
+            <div class="stack-card">
+              <div class="stack-front">
+                <div class="stack-div">
+                  <span class="stack-name">DataBase</span>
+                  <div class="line3"></div>
+                </div>
+                <a class="stack-more">Подробнее</a>
+              </div>
+              <div class="stack-back">
+                <div class="stack-content">
+                  <span>Database Technologies</span>
+                  <ul>
+                    <li>PostgreSQL</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Redis</li>
+                  </ul>
+                  <a class="stack-return">Назад</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects"></section>
+    </main>
   </body>
   <script src="static/js/script.js"></script>
 </html>
