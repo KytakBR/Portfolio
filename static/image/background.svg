@@ -33,15 +33,15 @@
   </defs>
   <g>
     <use href="#wave-line" x="0" y="-100" opacity="0.2"/>
-    <use href="#wave-line" x="0" y="-80" opacity="0.25"/>
-    <use href="#wave-line" x="0" y="-60" opacity="0.3"/>
-    <use href="#wave-line" x="0" y="-40" opacity="0.35"/>
-    <use href="#wave-line" x="0" y="-20" opacity="0.4"/>
-    <use href="#wave-line" x="0" y="0" opacity="0.45"/>
-    <use href="#wave-line" x="0" y="20" opacity="0.4"/>
-    <use href="#wave-line" x="0" y="40" opacity="0.35"/>
-    <use href="#wave-line" x="0" y="60" opacity="0.3"/>
-    <use href="#wave-line" x="0" y="80" opacity="0.25"/>
+    <use href="#wave-line" x="0" y="-80" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="-60" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="-40" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="-20" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="0" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="20" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="40" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="60" opacity="0.2"/>
+    <use href="#wave-line" x="0" y="80" opacity="0.2"/>
     <use href="#wave-line" x="0" y="100" opacity="0.2"/>
   </g>
   <g>

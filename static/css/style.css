@@ -2,11 +2,10 @@
 
 :root {
   --light-box-shadow: rgba(40, 98, 58, 1);
-  --background: rgb(212, 235, 196);
 }
 html {
   scroll-behavior: smooth;
-  background: url(../image/background-center.svg);
+  background: url(../image/background.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -28,13 +27,6 @@ body {
 
 body.dark {
   background-color: black;
-}
-
-header {
-  background: url(../image/background.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .headbar {
@@ -177,7 +169,7 @@ header {
   text-align: center;
   display: inline-block;
   background-color: rgba(40, 98, 58, 0.2);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(1px);
   box-shadow: 0 0 15px var(--light-box-shadow);
   padding: 15px;
   border-radius: 10px;
@@ -374,7 +366,7 @@ header {
 .line {
   height: 5px;
   width: 250%;
-  background-color: #fff;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
   opacity: 0.8;
   border-radius: 50%;
   z-index: 1;
@@ -383,7 +375,7 @@ header {
 .line3 {
   height: 5px;
   width: 130%;
-  background-color: #fff;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
   opacity: 0.8;
   border-radius: 50%;
   z-index: 1;
@@ -512,4 +504,306 @@ header {
 .learn1 div,
 .know1 div {
   margin-top: 10px;
+}
+.my-projects {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.my-projects span {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 60px;
+  border: 3px solid var(--light-box-shadow);
+  border-radius: 40px;
+  background-color: rgba(40, 98, 58, 0.2);
+  backdrop-filter: blur(5px);
+  color: var(--light-box-shadow);
+  font-family: "Unbounded", sans-serif;
+  font-size: 50px;
+}
+
+.parent {
+  height: 80vh;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  gap: 20px;
+}
+
+.div1 {
+  grid-row: span 4 / span 4;
+}
+
+.div2 {
+  grid-row: span 4 / span 4;
+}
+
+.div3 {
+  grid-row: span 4 / span 4;
+}
+
+.div4 {
+  grid-row: span 4 / span 4;
+}
+
+.div5 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+.div6 {
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(40, 98, 58, 0.2);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 10px var(--light-box-shadow);
+  border-radius: 15px;
+  border: 2px solid white;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.div1::before,
+.div2::before,
+.div3::before,
+.div4::before,
+.div5::before,
+.div6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  filter: blur(30px);
+  opacity: 0.4;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.div1:hover::before,
+.div2:hover::before,
+.div3:hover::before,
+.div4:hover::before,
+.div5:hover::before,
+.div6:hover::before {
+  left: 100%;
+}
+
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover {
+  transform: scale(1.01);
+}
+
+.vega {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  color: var(--light-box-shadow);
+  font-size: 30px;
+}
+
+.line1 {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--light-box-shadow),
+    transparent
+  );
+}
+
+.description span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--light-box-shadow);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.project-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-btns {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--light-box-shadow);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid var(--light-box-shadow);
+  border-radius: 15px;
+  width: 35%;
+  height: 40px;
+  transition: transform 0.5s;
+  box-shadow: 0 0 5px var(--light-box-shadow);
+}
+
+.site:hover {
+  transform: scale(1.05);
+}
+
+.div1 .logo-project {
+  width: 170px;
+  height: 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/vega-logo.png);
+}
+
+.div2 .logo-project {
+  width: 155px;
+  height: 155px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/trecker.png);
+}
+
+.div3 .logo-project {
+  width: 190px;
+  height: 190px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/i3.png);
+}
+
+.div4 .logo-project {
+  width: 220px;
+  height: 220px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(https://bereznyak72.github.io/blockchat-site/images/logo.png);
+}
+
+.div5 .logo-project {
+  width: 330px;
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/rsk.PNG);
+}
+
+.div6 .logo-project {
+  width: 330px;
+  height: 330px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../image/chronoscribe.png);
+}
+
+.contacts {
+  gap: 40px;
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(../image/background.svg);
+  background-size: cover;
+}
+
+.contact-txt {
+  font-family: "Unbounded", sans-serif;
+  text-align: center;
+  display: inline-block;
+  background-color: rgba(40, 98, 58, 0.2);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 0 15px var(--light-box-shadow);
+  padding: 15px 10px;
+  border-radius: 10px;
+  border: 2px solid white;
+  font-weight: 300;
+  transition: 0.5s;
+  line-height: 1.5;
+  color: var(--light-box-shadow);
+}
+
+.back-txt {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.contact-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  height: 60px;
+  width: 45%;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  background: linear-gradient(
+    156deg,
+    rgba(15, 32, 39, 1) 20%,
+    rgba(40, 98, 58, 1) 100%
+  );
+  box-shadow: 0 0 10px var(--light-box-shadow);
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+.contact-me:hover {
+  transform: scale(1.02);
+}
+
+.btn-contact {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
