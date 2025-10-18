@@ -395,6 +395,10 @@ header a {
   border: var(--txt) solid 2px;
 }
 
+.mobile {
+  display: none;
+}
+
 @keyframes sliden {
   from {
     left: 14%;
