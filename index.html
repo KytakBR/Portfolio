@@ -10,6 +10,10 @@
     />
     <title>Портфолио GuMi</title>
     <link rel="stylesheet" href="static/css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="static/css/style.css" />
   </head>
   <body>
@@ -23,7 +27,6 @@
             <a href="#about">Обо мне</a>
             <a href="#stack">Стек</a>
             <a href="#projects">Проекты</a>
-            <a href="contacts">Контакты</a>
           </nav>
         </div>
         <div class="contact-me">
@@ -69,18 +72,180 @@
             <div><img src="static/image/stack.png" alt="stack" /></div>
           </div>
           <div class="wrapper">
-            <div class="stack-div python"></div>
-            <div class="stack-div js"></div>
-            <div class="stack-div css"></div>
-            <div class="stack-div html"></div>
-            <div class="stack-div linux"></div>
-            <div class="stack-div react"></div>
-            <div class="stack-div docker"></div>
-            <div class="stack-div postgre"></div>
+            <div class="stack-div python">
+              <img src="static/image/python.png" alt="python" />PYTHON
+            </div>
+            <div class="stack-div js">
+              <img
+                src="static/image/javascript.png"
+                alt="javascript"
+              />JAVASCRIPT
+            </div>
+            <div class="stack-div css">
+              <img src="static/image/css.png" alt="css" />CSS
+            </div>
+            <div class="stack-div html">
+              <img src="static/image/html.png" alt="html" />МИНЕТ
+            </div>
+            <div class="stack-div linux">
+              <img src="static/image/linux.png" alt="linux" />LINUX
+            </div>
+            <div class="stack-div react">
+              <img src="static/image/react.png" alt="react" />REACT
+            </div>
+            <div class="stack-div docker">
+              <img src="static/image/docker.png" alt="docker" />DOCKER
+            </div>
+            <div class="stack-div postgre">
+              <img src="static/image/postgre.png" alt="postgre" />POSTGRE
+            </div>
           </div>
         </div>
       </section>
+      <section id="projects" class="projects">
+        <div class="project-img">
+          <div><img src="static/image/projects.png" alt="projects" /></div>
+        </div>
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-slide-div">
+                <div class="swiper-slide-img blockchat">
+                  <img src="static/image/logo2.png" alt="blockchat" />
+                </div>
+                <div class="projects-div-txt">
+                  <span class="projects-txt portfolio">PORTFOLIO</span>
+                  <span class="projects-txt description"
+                    >Это сайт моего портфолио, созданный специально, чтобы
+                    показать навыки, которыми я обладаю. Цель моего портфолио
+                    найти команду, в которой я смогу развиваться.</span
+                  >
+                </div>
+                <div class="projects-btn">
+                  <a href="#" target="_blank">Посетить сайт</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-div">
+                <div class="swiper-slide-img blockchat">
+                  <img
+                    src="https://raw.githubusercontent.com/bereznyak72/blockchat-site/refs/heads/main/images/logo-white.png"
+                    alt="blockchat"
+                  />
+                  <span>Недоступен для скачивания</span>
+                </div>
+                <div class="projects-div-txt">
+                  <span class="projects-txt portfolio">BLOCKCHAT</span>
+                  <span class="projects-txt description"
+                    >BlockChat — это мессенджер с прямой peer-to-peer связью
+                    между пользователями. Ваши сообщения передаются напрямую,
+                    без хранения на серверах.</span
+                  >
+                </div>
+                <div class="projects-btn">
+                  <a
+                    href="https://bereznyak72.github.io/blockchat-site"
+                    target="_blank"
+                    >Посетить сайт</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-div">
+                <div class="swiper-slide-img blockchat">
+                  <img src="static/image/vega.PNG" alt="vega" />
+                </div>
+                <div class="projects-div-txt">
+                  <span class="projects-txt portfolio">VEGAFEST</span>
+                  <span class="projects-txt description"
+                    >Сайт для фестиваля тюменской молодежной организации ВЕГА.
+                    Сайт представляет из себя афишу мероприятия для привлечения
+                    людей.
+                  </span>
+                </div>
+                <div class="projects-btn">
+                  <a href="https://vegafestival.ru" target="_blank"
+                    >Посетить сайт</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-div">
+                <div class="swiper-slide-img chronoscribe">
+                  <img src="static/image/chronoscribe.png" alt="chronoscribe" />
+                  <span>В разработке</span>
+                </div>
+                <div class="projects-div-txt">
+                  <span class="projects-txt portfolio">CHRONOSCRIBE</span>
+                  <span class="projects-txt description"
+                    >Приложение для студентов с планером, заметками и
+                    транскрибатором разнообразных аудио/видео материалов.
+                  </span>
+                </div>
+                <div class="projects-btn">
+                  <a href="https://vegafestival.ru" target="_blank"
+                    >Посетить сайт</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-div">
+                <div class="swiper-slide-img chronoscribe">
+                  <img src="static/image/rsk-elita.PNG" alt="chronoscribe" />
+                  <span>В разработке</span>
+                </div>
+                <div class="projects-div-txt">
+                  <span class="projects-txt portfolio">RSK-ELITA</span>
+                  <span class="projects-txt description"
+                    >Сайт для ремонтно строительной компании "Элита". На нем
+                    отображены все предоставляемые услуги компании, а также
+                    различная информация о самой компании "Элита".
+                  </span>
+                </div>
+                <div class="projects-btn">
+                  <a href="https://vegafestival.ru" target="_blank"
+                    >Посетить сайт</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-slide-div">
+                <div class="swiper-slide-img blockchat">
+                  <img src="static/image/tracker.png" alt="tracker" />
+                </div>
+                <div class="projects-div-txt">
+                  <span class="projects-txt portfolio">SPENDING TRACKER</span>
+                  <span class="projects-txt description"
+                    >Это проект в университете, который мы писали командой из 6
+                    человек. По нашему кейсу нам выпало написать трекер трат,
+                    ссылка есть только на исходный код.</span
+                  >
+                </div>
+                <div class="projects-btn">
+                  <a href="https://github.com/Dmitriz1/Case12" target="_blank"
+                    >Исходный код</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
     </main>
+    <section class="mobile">
+      <div><span>Мобильная версия в разработке</span></div>
+    </section>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="static/js/script.js"></script>
 </html>
