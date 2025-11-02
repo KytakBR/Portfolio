@@ -399,6 +399,19 @@ header a {
   display: none;
 }
 
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+  background-image: url("../image/Frame\ 4.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  /* filter: blur(10px); */
+}
+
 @keyframes sliden {
   from {
     left: 14%;
