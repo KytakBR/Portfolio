@@ -30,7 +30,7 @@ header {
 }
 
 .header {
-  position: relative;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: space-between;
